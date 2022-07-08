@@ -1,23 +1,31 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn to in react js project
-        </a>
-      </header>
+      <section className='main_content'>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-lg-9'>
+            <div className="card text-center" style={{ maxWidth: 640 }}>
+                <div className="card-header heading">ToDo Project in ReactJs</div>
+                <div className="card-body">
+                  <div className='row'>
+                    <div className='col-9'>
+                      <input type="text" placeholder='Write Something' className='form-control' />
+                    </div>
+                    <div className='col-3'>
+                      <button className='btn btn-primary px-5 font-weight-bold' type='button'>Add</button>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
